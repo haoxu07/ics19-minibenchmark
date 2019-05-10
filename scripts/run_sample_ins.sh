@@ -12,7 +12,6 @@ function2OperationNum=$5
 Operation1=$1
 Operation2=$2
 AppNameShort=$3
-#for (( i=1; i<=${function1OperationNum}; i++ )) 
 for i in $(seq 1 1 ${function1OperationNum})
 do
         sedMesseger="17 a \\\t ${Operation1};"
@@ -20,7 +19,6 @@ do
         #let pos=$((pos+1))
         pos=$(expr ${pos} + 1)
 done
-#for (( j=1; j<=${function2OperationNum}; j++ )) 
 for i in $(seq 1 1 ${function2OperationNum})
 do
         sedMesseger="${pos} a \\\t ${Operation2};"
