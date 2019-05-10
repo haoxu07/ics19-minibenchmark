@@ -3,5 +3,6 @@ do
         for i in {1..10}
         do
                 sh run_sample_cyc.sh "a/=i" "a+=i" "div_add" "${i}" "${j}"
+                sh run_sample_ins.sh "a/=i" "a+=i" "div_add" "${i}" "${j}"
         done
 done
